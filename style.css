@@ -1,0 +1,15 @@
+:root { --bg: #f2f1ec; --ink: #0b0b0c; --muted: #6b6b70; --line: rgba(0,0,0,.08); --accent: #f5a524; }
+@media (prefers-color-scheme: dark) { :root { --bg: #000; --ink: #f2f1ec; --muted: #9a9aa0; --line: rgba(255,255,255,.1); } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 ui-rounded, -apple-system, "SF Pro Rounded", system-ui, sans-serif; }
+main { max-width: 680px; margin: 0 auto; padding: 56px 20px 80px; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 800; letter-spacing: .2em; font-size: 13px; color: var(--accent); text-transform: uppercase; }
+.brand i { width: 26px; height: 10px; border-radius: 6px; background: var(--accent); display: inline-block; }
+h1 { font-size: 40px; line-height: 1.1; margin: 18px 0 6px; letter-spacing: -.02em; }
+h2 { font-size: 21px; margin: 36px 0 6px; }
+p, li { color: var(--ink); }
+.muted { color: var(--muted); font-size: 14px; }
+ul { padding-left: 22px; }
+.card { border: 1px solid var(--line); border-radius: 20px; padding: 18px 20px; margin: 22px 0; }
+a { color: inherit; text-decoration-color: var(--accent); text-underline-offset: 3px; }
+nav { margin-top: 44px; display: flex; gap: 18px; font-size: 14px; }
