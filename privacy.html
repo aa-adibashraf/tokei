@@ -10,11 +10,13 @@
 <main>
   <div class="brand"><i></i>Tokei</div>
   <h1>Privacy Policy</h1>
-  <p class="muted">Effective October 3, 2026 · Applies to Tokei for iPhone, iPad, Apple Watch and Mac</p>
+  <p class="muted">Effective October 3, 2026 · Updated October 3, 2026 · Applies to Tokei for iPhone, iPad, Apple Watch and Mac</p>
 
   <div class="card">
     <strong>The short version:</strong> Tokei has no accounts, no ads, no analytics and no tracking. Your data stays on
-    your devices and in your own iCloud account. We never receive it, can't see it, and don't sell or share it.
+    your devices and in your own iCloud account. We don't store it, can't browse it, and don't sell or share it. The
+    only thing that passes through a server of ours is a running timer on its way to your iPhone's Live Activity, and
+    it isn't kept.
   </div>
 
   <h2>What Tokei stores</h2>
@@ -45,6 +47,14 @@
   <p>Shortcuts, Siri requests, widgets, Live Activities, controls and the Apple Watch app all work on your devices with
   the same data described above. Reminders are scheduled locally. On-device intelligence features (such as suggested
   goal breakdowns and weekly recaps) run on your device using Apple's on-device models.</p>
+
+  <h2>Live Activities across devices</h2>
+  <p>When you start, pause or end a timer on one device (for example your Mac), Tokei can show or update the Live
+  Activity on your iPhone even when the app isn't open there. Only Apple's push service can do that, so Tokei sends
+  the timer's state (mode, start and end times, task titles, tags and their colours) together with your iPhone's Live
+  Activity push token to a small relay we run on Cloudflare Workers, which forwards it to Apple's push service. The
+  relay processes each request in real time and stores nothing: no logs of content, no tokens, no accounts. The push
+  tokens themselves are kept in your private iCloud database so your devices can find each other.</p>
 
   <h2>What we collect</h2>
   <p>Nothing. Tokei contains no third-party SDKs, analytics, advertising or crash-reporting services. If you choose to
